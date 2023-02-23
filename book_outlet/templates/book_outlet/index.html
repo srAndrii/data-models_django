@@ -4,6 +4,9 @@
 
 {% block content %}
 <ul>
-    <li>Books...</li>
+    {% for book in books %}
+     <li>{{book.title}} (Rating:{{book.rating}})</li>
+    {% endfor %}
+   
 </ul>
 {% endblock content %}
